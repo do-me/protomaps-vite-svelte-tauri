@@ -1,7 +1,7 @@
-# Tauri + SvelteKit
+# Tauri + SvelteKit + Vite + Protomaps
 
-This template should help get you started developing with Tauri and SvelteKit in Vite.
+A minimal repo for tauri v2 for using small protomaps pmtiles files as static/public assets (working on both, desktop and mobile).
 
-## Recommended IDE Setup
+<img width="912" alt="image" src="https://github.com/user-attachments/assets/479f01d8-2458-49ef-8c46-46176177798e" />
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+Note: this is thought as the most simple possible solution to get protomaps running on mobile too. For a more mature setup where pmtiles-files are downloaded on demand, see https://github.com/inro-digital/tauri-offline-maps
