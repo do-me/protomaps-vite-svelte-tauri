@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15399CB609B0AF566CE029FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0CF41B50D961B318C4885A /* QuartzCore.framework */; };
+		1B671FE5E46590DA1DFB5AC5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B766174FC8277377FD0AA62 /* Security.framework */; };
+		2B221C51B3C985C9358A4E0A /* assets in Resources */ = {isa = PBXBuildFile; fileRef = C5CD6F228CE6CBC76F6BB03E /* assets */; };
+		65D03D81D0CC01C84BF90C90 /* libapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9F7E6DC734BF93235221FD /* libapp.a */; };
+		73CB52C4B35AAE42FB04002C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044626BB03F52F0EC886C4AC /* WebKit.framework */; };
+		8129E5F3164DA512A37947FB /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BC140919B5D172233E3BAF6 /* main.mm */; };
+		88BA70A334FA3F4118A6E743 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97158E2E6E8AD2CB074D229E /* Metal.framework */; };
+		AF9AC908B6790E8EBB281961 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303A89039AED2E5B4BA8A47C /* CoreGraphics.framework */; };
+		B72454A6A1FC487EC5B0C620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B538139C7981C5359D0A275 /* LaunchScreen.storyboard */; };
+		BA1FD18054F79E4AB7BF5F41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C44664D992E69434AD7A0B /* UIKit.framework */; };
+		BC252DA003CD7A003AB4A932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC888755AF8AAE4416A1D6E1 /* Assets.xcassets */; };
+		DBAC33F7450C3EBCA91B2F3D /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B261ED793968231A0759843B /* MetalKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		044626BB03F52F0EC886C4AC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		150A3A634F5B27A5DAF646CA /* protomaps-svelte-tauri_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "protomaps-svelte-tauri_iOS.entitlements"; sourceTree = "<group>"; };
+		1B538139C7981C5359D0A275 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		303A89039AED2E5B4BA8A47C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3B766174FC8277377FD0AA62 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3F90FCF6FB32175D7D47E3CB /* lib.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = lib.rs; sourceTree = "<group>"; };
+		4BC140919B5D172233E3BAF6 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		4E1218EA6BA30DE972870753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5C76E983A1F551D08EF68397 /* protomaps-svelte-tauri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "protomaps-svelte-tauri.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C44664D992E69434AD7A0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96F21029E6BC636D29FAC918 /* main.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.rs; sourceTree = "<group>"; };
+		97158E2E6E8AD2CB074D229E /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		B261ED793968231A0759843B /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		C5CD6F228CE6CBC76F6BB03E /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		CC8962E7D0F83D51FF6E2D36 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		DF0CF41B50D961B318C4885A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FC888755AF8AAE4416A1D6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF9F7E6DC734BF93235221FD /* libapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6518A4FA8C4904410008AAFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D03D81D0CC01C84BF90C90 /* libapp.a in Frameworks */,
+				AF9AC908B6790E8EBB281961 /* CoreGraphics.framework in Frameworks */,
+				88BA70A334FA3F4118A6E743 /* Metal.framework in Frameworks */,
+				DBAC33F7450C3EBCA91B2F3D /* MetalKit.framework in Frameworks */,
+				15399CB609B0AF566CE029FD /* QuartzCore.framework in Frameworks */,
+				1B671FE5E46590DA1DFB5AC5 /* Security.framework in Frameworks */,
+				BA1FD18054F79E4AB7BF5F41 /* UIKit.framework in Frameworks */,
+				73CB52C4B35AAE42FB04002C /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67741BEA91F303D2D732E8E8 /* protomaps-svelte-tauri_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E1218EA6BA30DE972870753 /* Info.plist */,
+				150A3A634F5B27A5DAF646CA /* protomaps-svelte-tauri_iOS.entitlements */,
+			);
+			path = "protomaps-svelte-tauri_iOS";
+			sourceTree = "<group>";
+		};
+		6D7F6287C89DAEBC4B21EB32 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3F90FCF6FB32175D7D47E3CB /* lib.rs */,
+				96F21029E6BC636D29FAC918 /* main.rs */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		75F4E5BA51FCD75E43E57592 = {
+			isa = PBXGroup;
+			children = (
+				C5CD6F228CE6CBC76F6BB03E /* assets */,
+				FC888755AF8AAE4416A1D6E1 /* Assets.xcassets */,
+				1B538139C7981C5359D0A275 /* LaunchScreen.storyboard */,
+				D8007699FAD93C8DCA13813C /* Externals */,
+				67741BEA91F303D2D732E8E8 /* protomaps-svelte-tauri_iOS */,
+				7F1AB73E6F435C90DA911E80 /* Sources */,
+				6D7F6287C89DAEBC4B21EB32 /* src */,
+				B083AB68E647AC6ABB252946 /* Frameworks */,
+				F62B7FA4EA1A1354986496C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7ECA5B273D3BB84C92497A70 /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				CC8962E7D0F83D51FF6E2D36 /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		7F1AB73E6F435C90DA911E80 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9E35D23E6961032C3A5FE054 /* protomaps-svelte-tauri */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9E35D23E6961032C3A5FE054 /* protomaps-svelte-tauri */ = {
+			isa = PBXGroup;
+			children = (
+				4BC140919B5D172233E3BAF6 /* main.mm */,
+				7ECA5B273D3BB84C92497A70 /* bindings */,
+			);
+			path = "protomaps-svelte-tauri";
+			sourceTree = "<group>";
+		};
+		B083AB68E647AC6ABB252946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				303A89039AED2E5B4BA8A47C /* CoreGraphics.framework */,
+				FF9F7E6DC734BF93235221FD /* libapp.a */,
+				97158E2E6E8AD2CB074D229E /* Metal.framework */,
+				B261ED793968231A0759843B /* MetalKit.framework */,
+				DF0CF41B50D961B318C4885A /* QuartzCore.framework */,
+				3B766174FC8277377FD0AA62 /* Security.framework */,
+				92C44664D992E69434AD7A0B /* UIKit.framework */,
+				044626BB03F52F0EC886C4AC /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8007699FAD93C8DCA13813C /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		F62B7FA4EA1A1354986496C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C76E983A1F551D08EF68397 /* protomaps-svelte-tauri.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF01BC2F1C5069D0080A009F /* protomaps-svelte-tauri_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379A01521D08257281BF8069 /* Build configuration list for PBXNativeTarget "protomaps-svelte-tauri_iOS" */;
+			buildPhases = (
+				275F4ABDAAF125DC789E17C8 /* Build Rust Code */,
+				1668BB385249884C52BB6ECC /* Sources */,
+				1030D0393E0224F28229B8F6 /* Resources */,
+				6518A4FA8C4904410008AAFA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "protomaps-svelte-tauri_iOS";
+			productName = "protomaps-svelte-tauri_iOS";
+			productReference = 5C76E983A1F551D08EF68397 /* protomaps-svelte-tauri.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F646318D2BCA35D35D74C97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = E55B97373C9F3A9A565249DC /* Build configuration list for PBXProject "protomaps-svelte-tauri" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 75F4E5BA51FCD75E43E57592;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF01BC2F1C5069D0080A009F /* protomaps-svelte-tauri_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1030D0393E0224F28229B8F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC252DA003CD7A003AB4A932 /* Assets.xcassets in Resources */,
+				B72454A6A1FC487EC5B0C620 /* LaunchScreen.storyboard in Resources */,
+				2B221C51B3C985C9358A4E0A /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		275F4ABDAAF125DC789E17C8 /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Externals/x86_64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64-sim/${CONFIGURATION}/libapp.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "npm run -- tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1668BB385249884C52BB6ECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8129E5F3164DA512A37947FB /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D9178EAA06AFA01653AD979 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+		5A6FE5F47B8FC0AE0237B9B6 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "protomaps-svelte-tauri_iOS/protomaps-svelte-tauri_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = K7XMFG27ZR;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "protomaps-svelte-tauri_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.protomaps-svelte-tauri.app;
+				PRODUCT_NAME = "protomaps-svelte-tauri";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = debug;
+		};
+		75D635CF87D797B72A82A9C9 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+		D270BA62CC188BCFE548F455 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "protomaps-svelte-tauri_iOS/protomaps-svelte-tauri_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = K7XMFG27ZR;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "protomaps-svelte-tauri_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.protomaps-svelte-tauri.app;
+				PRODUCT_NAME = "protomaps-svelte-tauri";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		379A01521D08257281BF8069 /* Build configuration list for PBXNativeTarget "protomaps-svelte-tauri_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6FE5F47B8FC0AE0237B9B6 /* debug */,
+				D270BA62CC188BCFE548F455 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		E55B97373C9F3A9A565249DC /* Build configuration list for PBXProject "protomaps-svelte-tauri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D635CF87D797B72A82A9C9 /* debug */,
+				1D9178EAA06AFA01653AD979 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F646318D2BCA35D35D74C97 /* Project object */;
+}
